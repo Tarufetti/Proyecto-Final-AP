@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  body {
+    background-image: url("/src/fondo.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #e9d6d6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #790909;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  section {
+    background-color: rgb(222, 236, 235);
+    box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.75);
+    margin-top:-18px;
+    width:700px;
+    padding: 25px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  article img {
+    width: 20%;
+    margin-right: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  article p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  article ul {
+    list-style: disc;
+    margin-left: 2rem;
+  }
+  
+
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
