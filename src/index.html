@@ -8,9 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="src\icono titulo.png">
   <link rel="stylesheet" href="src/styles.css">
+  <script type="text/javascript">
+      var color = [rgb(222, 236, 235),rgb(0,0,0)]
+      var i = 0;
+      document.querySelector("header").addEventListener("click",function(){
+        i = 1 < color.length ? ++i : 0;
+        document.querySelector("section").style.background = color[i]
+      })
+  </script>
 </head>
 <body>
-  <header>
+  <header onclick="cambiaColor()">
     <h1>Raul Tarufetti</h1>
     <nav>
       <ul>
@@ -27,7 +35,7 @@
       <h2>Información Personal</h2>
       <article>
         <img src="src\Tarufetti.jpg" alt="My Photo"  width="50">
-        <p>Hola, mi nombre es Raul y tengo 5 años de experiencia en desarrollo web con HTML, CSS, y JavaScript. Me encantan los desafíos y utilizar código para resolver problemas.</p>
+        <p>Hola, mi nombre es Raul y tengo 4 años de experiencia en desarrollo web con HTML, CSS, y JavaScript. Me encantan los desafíos y utilizar código para resolver problemas.</p>
       </article>
     </section>
     <section id="experience">
