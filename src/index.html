@@ -8,21 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="src\icono titulo.png">
   <link rel="stylesheet" href="src/styles.css">
-  <script type="text/javascript">
-      var color = [rgb(222, 236, 235),rgb(0,0,0)]
-      var i = 0;
-      document.querySelector("header").addEventListener("click",function(){
-        i = 1 < color.length ? ++i : 0;
-        document.querySelector("section").style.background = color[i]
-      })
-  </script>
 </head>
-<body>
-  <header onclick="cambiaColor()">
-    <h1>Raul Tarufetti</h1>
+<body id='cuerpo'>  
+  <header id="head">
+    <h1><button class='tooltip' title="Clickeame 2 veces!" id='boton' onclick="changeColor()">Raul Tarufetti</button></h1>
     <nav>
       <ul>
-        <li><a href="#about">Información Personal</a></li>
+        <li id="li"><a href="#about">Informacion Personal</a></li>
         <li><a href="#experience">Experiencia</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Proyectos</a></li>
@@ -30,12 +22,12 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main id="principal">
     <section id="about">
-      <h2>Información Personal</h2>
+      <h2>Informacion Personal</h2>
       <article>
         <img src="src\Tarufetti.jpg" alt="My Photo"  width="50">
-        <p>Hola, mi nombre es Raul y tengo 4 años de experiencia en desarrollo web con HTML, CSS, y JavaScript. Me encantan los desafíos y utilizar código para resolver problemas.</p>
+        <p>Hola, mi nombre es Raul y tengo 4 años de experiencia en desarrollo web con HTML, CSS, y JavaScript. Me encantan los desafios y utilizar codigo para resolver problemas.</p>
       </article>
     </section>
     <section id="experience">
@@ -46,7 +38,7 @@
         <ul>
           <li>Desarrollo y mantenimiento de la tienda de E-commerce de la empresa utilizando HTML, CSS, y JavaScript.</li>
           <li>Trabajo en conjunto con el equipo de desarrollo para crear una web responsiva y agradable al usuario</li>
-          <li>utilización de scripts y caché para optimizar el rendimiento del sitio.</li>
+          <li>utilización de scripts y cache para optimizar el rendimiento del sitio.</li>
         </ul>
       </article>
     </section>
@@ -69,7 +61,7 @@
       <h2>Proyectos</h2>
       <article>
         <h3>Tienda de libros</h3>
-        <p>Una página web dedicada a brindarle al usuario acceso a cientos de libros gratuitos. Construida en HTML, CSS, JavaScript y React.</p>
+        <p>Una pagina web dedicada a brindarle al usuario acceso a cientos de libros gratuitos. Construida en HTML, CSS, JavaScript y React.</p>
         <h3>App del Clima</h3>
         <p>Una web fácil de utilizar, y de buena experiencia de usuario, para consultar el estado del clima y el pronóstico. Construida mediante HTML, CSS, JavaScript and Node.js.</p>
       </article>
@@ -85,4 +77,5 @@
     <p>Copyright © 2023 Raul Tarufetti.</p>
   </footer>
 </body>
+<script src="src\javascript.js"></script>
 </html>

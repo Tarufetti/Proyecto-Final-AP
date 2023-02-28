@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: Greenscr;
+  src: url("/Greenscr.ttf");
+}
+@font-face {
+  font-family: bitwise;
+  src: url("/bitwise.ttf") format('truetype');
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -17,12 +24,27 @@ header {
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: auto 100%;
+    font-family: Verdana;
+    color: black
   }
   h1 {
-    font-size: 2rem;
-    margin: 0;
+    padding: 5px;
+    
   }
-  
+  button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-family: Verdana;
+  }
+  button:hover {
+    color: #96b0bb;
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -35,14 +57,14 @@ header {
   }
   
   nav a {
-    color: #e9d6d6;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
   }
   
   nav a:hover {
-    color: #790909;
+    color: #96b0bb;
   }
 
   main {
@@ -52,7 +74,8 @@ header {
   }
   
   section {
-    background-color: rgb(222, 236, 235);
+    background-color: #DEE7EB;
+    ;
     box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.75);
     margin-top:-18px;
     width:700px;
@@ -70,7 +93,9 @@ header {
     align-items: center;
     justify-content: space-between;
   }
-  
+  p {
+    font-size: 16px;
+  }
   article img {
     width: 20%;
     margin-right: 2rem;
@@ -96,3 +121,13 @@ header {
     padding: 1rem;
   }
   
+.tooltip {
+	font-weight: Verdana;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+
+.tooltip:hover .tooltip-box {
+	display: inline-block;
+}
